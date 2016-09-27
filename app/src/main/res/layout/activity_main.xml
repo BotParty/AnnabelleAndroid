@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lukeyes.annabelleandroid.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Press:"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:showDividers="middle|beginning|end">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="playHey"
+                    android:text="Hey"/>
+                <Button
+                    android:onClick="playWhatsUp"
+                    android:text="What's Up?"/>
+                <Button
+                    android:onClick="playChill"
+                    android:text="Chill Brother"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:onClick="playSorry"
+                    android:text="Sorry"/>
+                <Button
+                    android:onClick="playChillSister"
+                    android:text="Chill Sister"/>
+                <Button
+                    android:onClick="playArthur"
+                    android:text="Arthur"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:onClick="playScared"
+                    android:text="Scared"/>
+                <Button
+                    android:onClick="playSacred"
+                    android:text="Sacred"/>
+                <Button
+                    android:onClick="playSalad"
+                    android:text="Salad"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:onClick="playAnnabelle"
+                    android:text="Annabelle"/>
+                <Button
+                    android:onClick="playFreeze"
+                    android:text="Freeze"/>
+                <Button
+                    android:onClick="playKidding"
+                    android:text="Kidding"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
